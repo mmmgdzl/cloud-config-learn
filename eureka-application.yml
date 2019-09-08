@@ -9,6 +9,11 @@ spring:
     user:
       name: guest
       password: 9879871221
+  rabbitmq:
+    host: 203.195.224.186
+    port: 5673
+    username: guest
+    password: 9879871221
 eureka:
   client:
     #指定服务注册中心地址
