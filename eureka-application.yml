@@ -3,7 +3,7 @@ server:
   port: 8000
 spring:
   profiles:
-    active: pro
+    active: dev
   #配置登录账号密码
   security:
     user:
