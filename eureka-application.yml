@@ -14,3 +14,9 @@ eureka:
     #指定服务注册中心地址
     service-url:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+---
+spring:
+  profiles: pro
+  security:
+    user:
+      :name: ttt
