@@ -1,0 +1,16 @@
+﻿#配置服务端口
+server:
+  port: 8000
+spring:
+  profiles:
+    active: pro
+  #配置登录账号密码
+  security:
+    user:
+      name: guest
+      password: 9879871221
+eureka:
+  client:
+    #指定服务注册中心地址
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
