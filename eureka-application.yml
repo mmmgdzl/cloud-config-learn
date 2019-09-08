@@ -36,7 +36,7 @@ spring:
   profiles: pro
   security:
     user:
-      name: ppp
+      name: ppp2
 ---
 spring:
   profiles: dev
