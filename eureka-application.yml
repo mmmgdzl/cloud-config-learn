@@ -19,4 +19,10 @@ spring:
   profiles: pro
   security:
     user:
-      :name: ttt
+      name: ppp
+---
+spring:
+  profiles: dev
+  security:
+    user:
+      name: ttt
