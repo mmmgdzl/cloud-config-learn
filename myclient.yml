@@ -31,4 +31,4 @@ spring:
 spring:
   profiles: dev
   application:
-    name: Client-DEV777
+    name: Client-DEV
