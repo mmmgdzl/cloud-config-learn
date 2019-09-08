@@ -14,6 +14,10 @@ eureka:
     #指定服务注册中心地址
     service-url:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+    #是否从注册中心获取注册的服务
+    fetch-registry: false
+    #是否注册到注册中心
+    register-with-eureka: false
   server:
     #注册中心的保护机制
     enable-self-preservation: false
@@ -22,11 +26,6 @@ eureka:
     prefer-ip-address: true
     #服务地址
     hostname: 127.0.0.1
-  client:
-    #是否从注册中心获取注册的服务
-    fetch-registry: false
-    #是否注册到注册中心
-    register-with-eureka: false
 ---
 spring:
   profiles: pro
