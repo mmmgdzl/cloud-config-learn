@@ -1,6 +1,6 @@
 ﻿#配置服务端口
 server:
-  port: 8000
+  port: 8777
 spring:
   profiles:
     active: dev
@@ -15,9 +15,9 @@ eureka:
     service-url:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
     #是否从注册中心获取注册的服务
-    fetch-registry: false
+    fetch-registry: ture
     #是否注册到注册中心
-    register-with-eureka: false
+    register-with-eureka: ture
   server:
     #注册中心的保护机制
     enable-self-preservation: false
@@ -27,7 +27,6 @@ eureka:
     #服务地址
     hostname: 127.0.0.1
 ---
-
 spring:
   profiles: pro
   application:
