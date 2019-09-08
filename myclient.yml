@@ -13,7 +13,7 @@ eureka:
   client:
     #指定服务注册中心地址
     service-url:
-      defaultZone: http://guest:9879871221@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://guest:9879871221@${eureka.instance.hostname}:8000/eureka/
   server:
     #注册中心的保护机制
     enable-self-preservation: false
